@@ -149,7 +149,7 @@ async def incoming_youtube_dl_f(client, message):
         yt_dl_pass_word = None
         cf_name = None
     else:
-        await i_m_sefg.edit("🐈 𝐎𝐩𝐩𝐬 𝐑𝐞𝐩𝐥𝐲 𝐰𝐢𝐭𝐡 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐕𝐢𝐝𝐞𝐨𝐬 𝐋𝐢𝐧𝐤.")
+        await i_m_sefg.edit("🛸 Hi Buddy Plz Reply With Valid Youtube link.")
         return
     if dl_url is not None:
         await i_m_sefg.edit_text("𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒊𝒏𝒈 𝑳𝒊𝒏𝒌𝒔..")
@@ -205,7 +205,7 @@ async def g_yt_playlist(client, message):
     if "youtube.com/playlist" in url:
         u_men = message.from_user.mention
         i_m_sefg = await message.reply_text(
-            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
+            f"<b>Ok Fine 🛸 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
@@ -271,10 +271,10 @@ async def rename_tg_file(client, message):
                 message_to_send += "\n"
             if message_to_send != "":
                 mention_req_user = (
-                    f"<a href='tg://user?id={usr_id}'>🐈 Hey Bru!! Your Requested Files 👇</a>\n\n"
+                    f"<a href='tg://user?id={usr_id}'>🛸 Hey Buddy!! Your Requested Files 👇</a>\n\n"
                 )
                 message_to_send = mention_req_user + message_to_send
-                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @TGFilmZone</b>"
+                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n🔘 Uploaded By : @Tellybots</b>"
             else:
                 message_to_send = "<i>FAILED</i> to upload files. 😞😞"
             await message.reply_text(
