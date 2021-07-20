@@ -27,7 +27,7 @@ async def upload_as_doc(client, message):
 
 
 async def upload_as_video(client, message):
-    user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,False)
+    user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,True)
     await message.reply_text("**🗞 Your Files Will Be Uploaded As Streamable 🎞**")
     
     
