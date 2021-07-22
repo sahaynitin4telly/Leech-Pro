@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K | gautamajay52 | MaxxRider
+# (c) Shrimadhav U K | gautamajay52 | Tellyleech
 
 import asyncio
 import logging
@@ -50,7 +50,7 @@ async def incoming_purge_message_f(client, message):
 
 
 async def incoming_message_f(client, message):
-    """/leech command or /gleech command"""
+    """/leech@anonymousleech command or /gleech@anonymousleech command"""
     user_command = message.command[0]
     #g_id = message.from_user.id
    # u_men = message.from_user.mention
@@ -125,7 +125,7 @@ async def incoming_message_f(client, message):
 
 
 async def incoming_youtube_dl_f(client, message):
-    """ /ytdl command """
+    """ /ytdl@anonymousleech command """
     current_user_id = message.from_user.id
     #u_men = message.from_user.mention
     #credit = await message.reply_text(
@@ -152,7 +152,7 @@ async def incoming_youtube_dl_f(client, message):
         await i_m_sefg.edit("🛸 Hi Buddy Plz Reply With Valid Youtube link.")
         return
     if dl_url is not None:
-        await i_m_sefg.edit_text("𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒊𝒏𝒈 𝑳𝒊𝒏𝒌𝒔..")
+        await i_m_sefg.edit_text("Your Link Has Been Extracting..")
         # create an unique directory
         user_working_dir = os.path.join(DOWNLOAD_LOCATION, str(current_user_id))
         # create download directory, if not exist
@@ -186,7 +186,7 @@ async def incoming_youtube_dl_f(client, message):
 
 # playlist
 async def g_yt_playlist(client, message):
-    """ /pytdl command """
+    """ /pytdl@anonymousleech command """
     user_command = message.command[0]
     usr_id = message.from_user.id
     is_cloud = False
